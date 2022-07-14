@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  z-index:99999999999;
+  top: 0;
+  position: fixed;
+  background-color: var(--mainBackGround);
+}
+nav ul {
+  margin: 0;
+  width: 70%;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li {
+  min-width: fit-content;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--mainTextColor);
+  padding: 10px;
+
+}
+nav ul li a.active {
+  background-color: var(--mainColor);
+  color: #fff;
+  border-radius: var(--MainBorderRadius);
+}
+nav ul li a:hover {
+  color: var(--mainColor);
+  background-color: #fff;
+  border: var(--mainColor) solid 1px;
+}
