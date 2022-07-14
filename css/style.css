@@ -23,3 +23,13 @@ main {
   margin: auto;
   padding: 0 5%;
 }
+img[alt="To Top"] {
+  width: 50px;
+  z-index: 120;
+  position: fixed;
+  bottom: 20px;
+  transform: translatey(100px);
+  right: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}

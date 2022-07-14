@@ -1,0 +1,32 @@
+footer{
+    max-width: 100vw;
+  }
+  footer .foot {
+    background-color: #2b2933;
+    max-width: 100vw;
+    padding: 30px;
+    color: #fff;
+  }
+  footer .foot .row .col-md-6 {
+    padding: 20px 0;
+  }
+  .contactt {
+    padding: 10px 15%;
+  }
+  footer .foott {
+    font-size: 0.7rem;
+    color: #fff;
+    padding: 20px;
+    max-width: 100vw;
+    background-color: #333;
+  }
+  footer .foott a {
+    font-size: 0.7rem;
+    color: red;
+    text-decoration: none;
+  }
+  footer .foott a:hover {
+    font-size: 0.8rem;
+    color: #a0fbff;
+    text-decoration: underline;
+  }

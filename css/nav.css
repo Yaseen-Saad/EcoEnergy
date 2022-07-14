@@ -4,7 +4,7 @@ nav {
   align-items: center;
   padding: 10px;
   height: 100px;
-  z-index:99999999999;
+  z-index: 99999999999;
   top: 0;
   position: fixed;
   background-color: var(--mainBackGround);
@@ -24,7 +24,8 @@ nav ul li a {
   text-decoration: none;
   color: var(--mainTextColor);
   padding: 10px;
-
+  margin: 0 3px;
+  border: 1px solid transparent;
 }
 nav ul li a.active {
   background-color: var(--mainColor);
@@ -34,5 +35,5 @@ nav ul li a.active {
 nav ul li a:hover {
   color: var(--mainColor);
   background-color: #fff;
-  border: var(--mainColor) solid 1px;
+  border: 1px solid var(--mainColor);
 }

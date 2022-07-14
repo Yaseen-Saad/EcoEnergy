@@ -18,18 +18,18 @@ header p span:last-child {
   color: #fff;
   display: block;
 }
-section:nth-of-type(1) {
+main section:nth-of-type(1) {
   display: flex;
   margin: var(--sectionsGap) 0;
   flex-direction: column;
 }
-section:nth-of-type(1) h2 {
+main section:nth-of-type(1) h2 {
   color: rgb(0, 115, 21);
   text-align: center;
   font-size: 4rem;
 }
-section:nth-of-type(1) > p,
-section:nth-of-type(2) > p {
+main section:nth-of-type(1) > p,
+main section:nth-of-type(2) > p {
   text-align: center;
   font-size: 1.2rem;
   opacity: 0.8;
@@ -39,7 +39,7 @@ section:nth-of-type(2) > p {
   gap: var(--cardsGap);
   grid-template-columns: repeat(3, 1fr);
 }
-section:nth-of-type(1).card img {
+main section:nth-of-type(1).card img {
   max-height: 200px;
 }
 .card {
@@ -53,70 +53,78 @@ section:nth-of-type(1).card img {
 hr {
   margin: 0;
 }
-section:nth-of-type(2),
-section:nth-of-type(3) {
+main section:nth-of-type(2),
+main section:nth-of-type(3) {
   padding-top: var(--sectionsGap);
   padding-bottom: var(--sectionsGap);
   background-color: var(--mainBackGround);
 }
-section:nth-of-type(2) > h2,
-section:nth-of-type(3) > h2 {
+main section:nth-of-type(2) > h2,
+main section:nth-of-type(3) > h2,
+main section:nth-of-type(4) > h2 {
   font-size: 3rem;
   text-align: center;
   color: var(--mainColor);
 }
-section:nth-of-type(2) .card-4,
-section:nth-of-type(3) .card-4 {
+main section:nth-of-type(2) .card-4,
+main section:nth-of-type(3) .card-4,
+main section:nth-of-type(4) .card-4 {
   display: grid;
   gap: calc(var(--cardsGap) + 10px) calc(var(--cardsGap) + 5px);
   grid-template-columns: repeat(2, 1fr);
 }
-section:nth-of-type(2) .card-4 .card {
+main section:nth-of-type(2) .card-4 .card {
   display: flex;
   flex-direction: column;
   background-color: inherit;
   align-items: center;
   justify-content: space-evenly;
 }
-section:nth-of-type(2) .card-4 img {
+main section:nth-of-type(2) .card-4 img {
   width: 100px;
   margin-bottom: 30px;
 }
-section:nth-of-type(2) .card-4 .card > h3,
-section:nth-of-type(3) .card-4 .card > h3 {
+main section:nth-of-type(2) .card-4 .card > h3,
+main section:nth-of-type(3) .card-4 .card > h3 {
   font-weight: 900;
-  font-size:2rem ;
+  font-size: 2rem;
   margin: 10px 0 -20px;
 }
-section:nth-of-type(2) .card-4 .card > p,
-section:nth-of-type(3) .card-4 .card > p {
-    font-size: 1.4rem;
+main section:nth-of-type(2) .card-4 .card > p,
+main section:nth-of-type(3) .card-4 .card > p {
+  font-size: 1.4rem;
   opacity: 0.8;
 }
-section:nth-of-type(2) .card-4 .card > a {
+main section:nth-of-type(2) .card-4 .card > a {
   color: var(--mainColor);
   background-color: #fff;
   border: var(--mainColor) solid 1px;
   padding: 10px;
   text-decoration: none;
 }
-section:nth-of-type(2) .card-4 .card > a:hover {
+main section:nth-of-type(2) .card-4 .card > a:hover {
   color: #000;
-  border: #000;
+  border-color: #000;
 }
-section:nth-of-type(3) .card-4 .card p{
-    text-align: start;
-
+main section:nth-of-type(3) .card-4 .card p {
+  text-align: start;
 }
-section:nth-of-type(3) .card-4 .card {
+main section:nth-of-type(3) .card-4 .card {
   background-color: inherit;
 }
-section:nth-of-type(3) .card-4 .card{
-    min-height: 400px;
+main section:nth-of-type(3) .card-4 .card {
+  min-height: 400px;
 }
-section:nth-of-type(3) > p,
-section:nth-of-type(2) > p {
+main section:nth-of-type(3) > p,
+main section:nth-of-type(4) > p,
+main section:nth-of-type(2) > p {
   margin: 30px 0;
   font-size: 1.5rem;
   text-align: center;
+}
+main section:nth-of-type(4) {
+  margin-bottom: 50px;
+}
+.notHome{
+  display: none;
 }
