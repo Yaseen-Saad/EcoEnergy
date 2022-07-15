@@ -1,0 +1,22 @@
+main > div.header {
+    background-image: url(../images/About-UsDesktopheader.jpg);
+    background-size: cover;
+    margin-top: 100px;
+  }
+main > div.header > p:first-child {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+  }
+  main > div.header > p:first-child span {
+    padding: 3px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  main > div.header > p:first-child span:first-child {
+    color: #000;
+  }
+  main > div.header > p:first-child span:last-child {
+    color: #fff;
+  }

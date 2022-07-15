@@ -3,7 +3,7 @@
   --mainColor: #039b68;
   --MainBorderRadius: 4px;
   --mainBackGround: #f9f9f9;
-  --sectionsGap: 70px;
+  --sectionsGap: 50px;
   --cardsGap: 30px;
 }
 body {
@@ -32,4 +32,21 @@ img[alt="To Top"] {
   right: 20px;
   transition: 0.2s;
   cursor: pointer;
+}
+@media (max-width: 720px) {
+  img[src="images/toTop.png"]{
+    display: none;
+  }
+  img[alt="To Top"]{
+    width: 30px;
+  }
+}
+@media (min-width: 1114px) {
+  main section:nth-of-type(2) .card-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  main{
+    width: 1200px;
+    margin: auto;
+  }
 }

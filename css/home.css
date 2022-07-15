@@ -18,7 +18,7 @@ header p span:last-child {
   color: #fff;
   display: block;
 }
-main section:nth-of-type(1) {
+main section:nth-of-type(1):not(.foot):not(.row) {
   display: flex;
   margin: var(--sectionsGap) 0;
   flex-direction: column;
@@ -53,7 +53,7 @@ main section:nth-of-type(1).card img {
 hr {
   margin: 0;
 }
-main section:nth-of-type(2),
+main section:nth-of-type(2):not(.foot):not(.foott),
 main section:nth-of-type(3) {
   padding-top: var(--sectionsGap);
   padding-bottom: var(--sectionsGap);
@@ -113,7 +113,7 @@ main section:nth-of-type(3) .card-4 .card {
   background-color: inherit;
 }
 main section:nth-of-type(3) .card-4 .card {
-  min-height: 400px;
+  min-height: 170px;
 }
 main section:nth-of-type(3) > p,
 main section:nth-of-type(4) > p,
@@ -125,6 +125,54 @@ main section:nth-of-type(2) > p {
 main section:nth-of-type(4) {
   margin-bottom: 50px;
 }
-.notHome{
+.notHome {
   display: none;
+}
+
+@media (min-width: 1440px) {
+  main section:nth-of-type(2) .card-4,
+  main section:nth-of-type(3) .card-4,
+  main section:nth-of-type(4) .card-4,
+  .card-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 948px) {
+  header p span,
+  main section:nth-of-type(1) h2,
+  main section:nth-of-type(2) h2,
+  main section:nth-of-type(3) h2,
+  main section:nth-of-type(4) h2 {
+    font-size: 2rem;
+  }
+  main section:nth-of-type(1) > p,
+  main section:nth-of-type(2) > p,
+  main section:nth-of-type(3) > p,
+  main section:nth-of-type(4) > p,
+  main section:nth-of-type(2) .card-4 .card > p,
+  main section:nth-of-type(3) .card-4 .card > p {
+    font-size: 0.9rem;
+  }
+  main section:nth-of-type(1) h2 {
+    font-size: 2rem;
+  }
+  main section:nth-of-type(2) .card-4,
+  main section:nth-of-type(3) .card-4,
+  main section:nth-of-type(4) .card-4,
+  .card-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main section:nth-of-type(2) .card-4 .card > h3,
+  main section:nth-of-type(3) .card-4 .card > h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 524px) {
+  main section:nth-of-type(2) .card-4,
+  main section:nth-of-type(3) .card-4,
+  main section:nth-of-type(4) .card-4,
+  .card-3 {
+    grid-template-columns: 1fr;
+  }
+
 }
