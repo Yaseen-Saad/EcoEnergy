@@ -50,3 +50,12 @@ img[alt="To Top"] {
     margin: auto;
   }
 }
+  nav .on span{
+  transform: translateX(100px);
+}
+nav .on span:first-child {
+transform: translatey(8px) translateX(-4px) rotate(-45deg);
+}
+nav .on span:last-child {
+transform: translatey(-14px) translateX(-4px) rotate(45deg);
+}

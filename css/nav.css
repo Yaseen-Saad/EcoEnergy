@@ -40,3 +40,52 @@ nav ul li a:hover {
   background-color: #fff;
   border: 1px solid var(--mainColor);
 }
+@media (max-width: 822px) {
+  nav .togller {
+    display: flex;
+    width: 45px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img {
+    width: 40%;
+  }
+  nav .togller span {
+    width: 100%;
+    display: inline-block;
+    height: 10%;
+    background-color: var(--mainColor);
+  }
+
+  nav ul {
+    width: 150px;
+    position: absolute;
+    overflow: clip;
+    flex-direction: column;
+    background-color: var(--mainBackGround);
+    right: 0;
+    z-index: 89423984223;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    top: 70px;
+    transform: translateX(150px);
+    min-height: 270px;
+  }
+  ul.on{
+    transform: translateX(0);
+
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li a {
+    display: inline-block;
+    margin-left: 0;
+    width: 100%;
+  }
+  nav ul li a {
+    margin-left: 1px;
+  }
+}
