@@ -7,8 +7,6 @@ main.prepend(Nav);
 var path = window.location.pathname;
 var page = path.split("/").pop().split(".");
 let lis = document.querySelectorAll("nav ul li");
-let toggler = document.querySelector(".togller");
-let ull = document.querySelector("nav ul");
 for (let i = 0; i < lis.length; i++) {
   if (
     lis[i].children[0].innerText.split(" ")[0].toLowerCase() ==
@@ -19,8 +17,3 @@ for (let i = 0; i < lis.length; i++) {
     lis[i].children[0].classList.remove("active");
   }
 }
-toggler.onclick = () => {
-  toggler.classList.toggle("on");
-  ull.classList.toggle("on");
-};
-console.log(ull);

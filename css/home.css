@@ -95,17 +95,6 @@ main section:nth-of-type(3) .card-4 .card > p {
   font-size: 1.4rem;
   opacity: 0.8;
 }
-main section:nth-of-type(2) .card-4 .card > a {
-  color: var(--mainColor);
-  background-color: #fff;
-  border: var(--mainColor) solid 1px;
-  padding: 10px;
-  text-decoration: none;
-}
-main section:nth-of-type(2) .card-4 .card > a:hover {
-  color: #000;
-  border-color: #000;
-}
 main section:nth-of-type(3) .card-4 .card p {
   text-align: start;
 }

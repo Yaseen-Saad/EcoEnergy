@@ -1,0 +1,13 @@
+@media (max-width: 384px) {
+  main > section > article.card-4 .cards div:first-child img {
+    width: 100%;
+  }
+  main > section > article.card-4 .cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  main > section > article.card-4 .cards div img{
+  margin-right: 20px;
+}
